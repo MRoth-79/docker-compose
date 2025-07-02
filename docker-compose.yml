@@ -5,7 +5,7 @@ services: # Defines the services (containers) that make up your application
     image: nginx:latest # Specifies the Docker image to use for this service (Nginx latest version)
     container_name: my_nginx # Assigns a custom name to the container
     ports: # Maps ports from the host to the container
-      - "8080:80" # Maps host port 8080 to container port 80 (Nginx default HTTP port)
+      - "8081:80" # Maps host port 8080 to container port 80 (Nginx default HTTP port)
     volumes: # Mounts host paths or named volumes into the container
       # Mounts your local index.html file into the Nginx default web root.
       # This means Nginx will serve your custom index.html instead of its default one.
